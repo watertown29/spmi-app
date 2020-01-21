@@ -1,5 +1,4 @@
 * {
-  background: lightgray;
   margin: 0;
   padding: 0;
 }
@@ -32,48 +31,16 @@
   padding: 30px;
 }
 
-.nav-links {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.menu{
+  position: fixed;
+  background: #222;
+  height: calc(100vh - 120px);
+  width: 200px;
   left: 0;
-  right: 0%;
-  width: 0;
-  overflow: hidden;
-  transition: var(--mainTransition);
-  list-style-type: none;
-  background: lightsalmon;
 }
 
-.nav-links a {
-  display: block;
-  text-decoration: none;
-  padding: 1rem 0;
-  color: var(--mainBlack);
-  transition: var(--mainTransition);
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: var(--mainSpacing);
-  background: lightsalmon;
-}
-.nav-links a:hover {
-  color: var(--primaryColor);
-}
-
-.show-nav {
-  width: 75%;
-}
-
-.back-btn-container{
-  position: relative;
-}
-
-.back-btn{
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  background: lightsalmon;
+.show-nav{
+  left: -200px;
 }
 
 .home-bg{
